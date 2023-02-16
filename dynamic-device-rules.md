@@ -7,3 +7,6 @@
 
 ## All iPad devices
 (device.deviceOSType -eq "iPad")
+
+## All Android Enterprise devices based on the enrollment profile
+(device.enrollmentProfileName -eq "ENTER_AE_PROFILE_NAME_HERE")

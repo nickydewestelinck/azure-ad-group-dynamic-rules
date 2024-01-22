@@ -16,3 +16,6 @@ user.assignedPlans -any (assignedPlan.servicePlanId -eq "c1ec4a95-1f05-45b3-a911
 
 ## Dynamic Device GRoup based on Device Tag in Autopilot
 (device.devicePhysicalIds -any (_ -eq "[OrderID]:GROUPTAG"))
+
+## Dynamic User Group basec on M365 Apps for Enterprise Subscriptionµ
+user.assignedPlans -any (assignedPlan.servicePlanId -eq "43de0ff5-c92c-492b-9116-175376d08c38" -and assignedPlan.capabilityStatus -eq "Enabled")

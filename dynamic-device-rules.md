@@ -19,3 +19,9 @@ user.assignedPlans -any (assignedPlan.servicePlanId -eq "c1ec4a95-1f05-45b3-a911
 
 ## Dynamic User Group basec on M365 Apps for Enterprise Subscriptionµ
 user.assignedPlans -any (assignedPlan.servicePlanId -eq "43de0ff5-c92c-492b-9116-175376d08c38" -and assignedPlan.capabilityStatus -eq "Enabled")
+
+## Windows 10 devices
+(device.deviceOSVersion -startsWith "10.0.1")
+
+## Windows 11 devices
+(device.deviceOSVersion -startsWith "10.0.2")
